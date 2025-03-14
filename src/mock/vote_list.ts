@@ -6,16 +6,18 @@ export const MOCK_VOTE_LIST = [
     author: "홍길동",
     max: 1500,
     min: 50,
-    created_at: "2024-03-10T15:23:45.123Z"
+    created_at: "2024-03-10T15:23:45.123Z",
+    expires_at: "2024-03-17T15:23:45.123Z"
   },
   {
     id: 2,
     title: "가장 좋아하는 프로그래밍 언어",
     description: "2024년 가장 좋아하는 프로그래밍 언어는 무엇인가요?",
     author: "김철수",
-    max: 2500,
+    max: 0,
     min: 200,
-    created_at: "2024-02-20T10:12:34.567Z"
+    created_at: "2024-02-20T10:12:34.567Z",
+    expires_at: "2024-02-27T10:12:34.567Z"
   },
   {
     id: 3,
@@ -24,16 +26,18 @@ export const MOCK_VOTE_LIST = [
     author: "이영희",
     max: 3200,
     min: 150,
-    created_at: "2023-11-30T08:45:00.000Z"
+    created_at: "2023-11-30T08:45:00.000Z",
+    expires_at: "2023-12-07T08:45:00.000Z"
   },
   {
     id: 4,
     title: "2024년 최고의 기술 기기",
     description: "2024년 최고의 기술 기기를 뽑아주세요.",
-    author: "박민수",
-    max: 4200,
+    author: "",
+    max: 0,
     min: 100,
-    created_at: "2023-10-18T12:30:45.876Z"
+    created_at: "2023-10-18T12:30:45.876Z",
+    expires_at: "2023-10-25T12:30:45.876Z"
   },
   {
     id: 5,
@@ -42,7 +46,8 @@ export const MOCK_VOTE_LIST = [
     author: "정지은",
     max: 5000,
     min: 10,
-    created_at: "2024-01-05T07:15:23.459Z"
+    created_at: "2024-01-05T07:15:23.459Z",
+    expires_at: "2024-01-12T07:15:23.459Z"
   },
   {
     id: 6,
@@ -51,16 +56,18 @@ export const MOCK_VOTE_LIST = [
     author: "최유진",
     max: 2100,
     min: 75,
-    created_at: "2023-12-11T16:20:11.789Z"
+    created_at: "2023-12-11T16:20:11.789Z",
+    expires_at: "2023-12-18T16:20:11.789Z"
   },
   {
     id: 7,
     title: "최고의 레스토랑",
     description: "가장 기억에 남는 레스토랑을 뽑아주세요.",
-    author: "배민정",
+    author: "",
     max: 1800,
     min: 300,
-    created_at: "2023-08-22T14:50:35.123Z"
+    created_at: "2023-08-22T14:50:35.123Z",
+    expires_at: "2023-08-29T14:50:35.123Z"
   },
   {
     id: 8,
@@ -69,7 +76,8 @@ export const MOCK_VOTE_LIST = [
     author: "한수진",
     max: 1100,
     min: 50,
-    created_at: "2023-09-10T11:00:44.456Z"
+    created_at: "2023-09-10T11:00:44.456Z",
+    expires_at: "2023-09-17T11:00:44.456Z"
   },
   {
     id: 9,
@@ -78,15 +86,17 @@ export const MOCK_VOTE_LIST = [
     author: "오세훈",
     max: 3500,
     min: 80,
-    created_at: "2023-07-14T09:25:00.000Z"
+    created_at: "2023-07-14T09:25:00.000Z",
+    expires_at: "2023-07-21T09:25:00.000Z"
   },
   {
     id: 10,
     title: "올해 최고의 스포츠 팀",
     description: "올해 최고의 스포츠 팀은 어디인가요?",
     author: "송지혜",
-    max: 4100,
+    max: 0,
     min: 200,
-    created_at: "2023-12-01T18:40:22.987Z"
+    created_at: "2023-12-01T18:40:22.987Z",
+    expires_at: "2023-12-08T18:40:22.987Z"
   }
 ];
