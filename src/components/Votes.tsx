@@ -10,7 +10,7 @@ export const Votes = () => {
       <p className="text-3xl font-extrabold">진행중인 투표</p>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
-          ({ id, title, description, max, min, expires_at }) => {
+          ({ id, title, description, votes_count, expires_at }) => {
             const formattedRemainTime = formatExpirationTime(expires_at);
 
             return (
@@ -31,11 +31,7 @@ border-black/20 p-6 shadow-md"
                 >
                   <div className="flex items-center gap-1">
                     <Users className="h-4 w-4" />
-                    <span>
-                      {max === 0
-                        ? min
-                        : `${min} / ${max.toLocaleString()}`}
-                    </span>
+                    <span>{votes_count}</span>
                   </div>
                   <div
                     className={cn(
