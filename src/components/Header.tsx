@@ -5,7 +5,7 @@ import {
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 
-import { AlignJustifyIcon, UserRound } from "lucide-react";
+import { AlignJustifyIcon } from "lucide-react";
 
 const Dropdown = () => {
   return (
@@ -18,15 +18,7 @@ const Dropdown = () => {
           className="flex w-full items-center gap-2"
           asChild
         >
-          <button>
-            <div
-              className="h-fit w-fit rounded-full border-[1px]
-border-black/20 p-1"
-            >
-              <UserRound />
-            </div>
-            <span>로그인</span>
-          </button>
+          <button>로그인</button>
         </DropdownMenuLabel>
       </DropdownMenuContent>
     </DropdownMenu>
