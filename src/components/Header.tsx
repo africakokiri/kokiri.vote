@@ -1,13 +1,11 @@
 import {
   DropdownMenu,
   DropdownMenuContent,
-  DropdownMenuItem,
   DropdownMenuLabel,
-  DropdownMenuSeparator,
   DropdownMenuTrigger
 } from "@/components/ui/dropdown-menu";
 
-import { AlignJustifyIcon } from "lucide-react";
+import { AlignJustifyIcon, UserRound } from "lucide-react";
 
 const Dropdown = () => {
   return (
@@ -16,12 +14,20 @@ const Dropdown = () => {
         <AlignJustifyIcon />
       </DropdownMenuTrigger>
       <DropdownMenuContent className="absolute -right-3">
-        <DropdownMenuLabel>My Account</DropdownMenuLabel>
-        <DropdownMenuSeparator />
-        <DropdownMenuItem>Profile</DropdownMenuItem>
-        <DropdownMenuItem>Billing</DropdownMenuItem>
-        <DropdownMenuItem>Team</DropdownMenuItem>
-        <DropdownMenuItem>Subscription</DropdownMenuItem>
+        <DropdownMenuLabel
+          className="flex w-full items-center gap-2"
+          asChild
+        >
+          <button>
+            <div
+              className="h-fit w-fit rounded-full border-[1px]
+border-black/20 p-1"
+            >
+              <UserRound />
+            </div>
+            <span>로그인</span>
+          </button>
+        </DropdownMenuLabel>
       </DropdownMenuContent>
     </DropdownMenu>
   );
