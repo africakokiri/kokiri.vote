@@ -3,6 +3,7 @@ import { MOCK_VOTE_LIST } from "@/mock/vote_list";
 import { formatExpirationTime } from "@/utils/calcTime";
 
 import { ChevronRight, Clock, Users } from "lucide-react";
+import Link from "next/link";
 
 export const Votes = () => {
   return (
@@ -19,38 +20,42 @@ export const Votes = () => {
                 className="space-y-4 rounded-md border-[1px]
 border-black/20 p-6 shadow-md"
               >
-                {/* title, description */}
-                <div className="space-y-2">
-                  <p className="text-2xl font-bold">{title}</p>
-                  <p className="text-sm text-black/70">{description}</p>
-                </div>
-
-                {/* others */}
-                <div
-                  className="flex items-center gap-6 text-sm text-black/70"
-                >
-                  <div className="flex items-center gap-1">
-                    <Users className="h-4 w-4" />
-                    <span>{votes_count}</span>
+                <Link href={id.toString()}>
+                  {/* title, description */}
+                  <div className="space-y-2">
+                    <p className="text-2xl font-bold">{title}</p>
+                    <p className="text-sm text-black/70">{description}</p>
                   </div>
+
+                  {/* others */}
                   <div
-                    className={cn(
-                      "flex items-center gap-1",
-                      !formattedRemainTime.includes("일") && "text-red-500"
-                    )}
+                    className="flex items-center gap-6 text-sm
+text-black/70"
                   >
-                    <Clock className="h-4 w-4" />
-                    <span>{formattedRemainTime}</span>
+                    <div className="flex items-center gap-1">
+                      <Users className="h-4 w-4" />
+                      <span>{votes_count}</span>
+                    </div>
+                    <div
+                      className={cn(
+                        "flex items-center gap-1",
+                        !formattedRemainTime.includes("일") &&
+                          "text-red-500"
+                      )}
+                    >
+                      <Clock className="h-4 w-4" />
+                      <span>{formattedRemainTime}</span>
+                    </div>
                   </div>
-                </div>
 
-                {/* footer */}
-                <div className="flex justify-end pt-6 text-xs">
-                  <p className="flex items-center text-base">
-                    투표하기
-                    <ChevronRight className="h-4 w-4" />
-                  </p>
-                </div>
+                  {/* footer */}
+                  <div className="flex justify-end pt-6 text-xs">
+                    <p className="flex items-center text-base">
+                      투표하기
+                      <ChevronRight className="h-4 w-4" />
+                    </p>
+                  </div>
+                </Link>
               </li>
             );
           }
