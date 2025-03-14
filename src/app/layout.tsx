@@ -19,10 +19,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
-      <body className="h-screen w-screen p-4 antialiased">
+      <body className="h-screen w-screen antialiased">
         <NextThemesProvider>
           <Header />
-          {children}
+          <div className="p-4 pt-[60px]">{children}</div>
         </NextThemesProvider>
       </body>
     </html>
