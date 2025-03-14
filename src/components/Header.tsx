@@ -28,8 +28,8 @@ const Dropdown = () => {
 export const Header = () => {
   return (
     <header
-      className="fixed flex w-full items-center justify-between p-4
-backdrop-blur-md"
+      className="fixed flex w-full items-center justify-between
+border-b-[1px] border-black/20 p-4 backdrop-blur-md"
     >
       <h1 className="text-xl font-extrabold">코끼리</h1>
       <Dropdown />
