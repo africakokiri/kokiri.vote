@@ -6,8 +6,8 @@ export const MOCK_VOTE_LIST = [
     author: "홍길동",
     max: 1500,
     min: 50,
-    created_at: "2024-03-10T15:23:45.123Z",
-    expires_at: "2024-03-17T15:23:45.123Z"
+    created_at: "2025-03-14T23:34:45.123Z",
+    expires_at: "2025-03-15T08:04:00.000Z"
   },
   {
     id: 2,
@@ -16,8 +16,8 @@ export const MOCK_VOTE_LIST = [
     author: "김철수",
     max: 0,
     min: 200,
-    created_at: "2024-02-20T10:12:34.567Z",
-    expires_at: "2024-02-27T10:12:34.567Z"
+    created_at: "2025-03-14T20:12:34.567Z",
+    expires_at: "2025-03-15T10:04:00.000Z"
   },
   {
     id: 3,
@@ -26,8 +26,8 @@ export const MOCK_VOTE_LIST = [
     author: "이영희",
     max: 3200,
     min: 150,
-    created_at: "2023-11-30T08:45:00.000Z",
-    expires_at: "2023-12-07T08:45:00.000Z"
+    created_at: "2025-03-13T10:45:00.000Z",
+    expires_at: "2025-03-17T02:04:00.000Z"
   },
   {
     id: 4,
@@ -36,8 +36,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     max: 0,
     min: 100,
-    created_at: "2023-10-18T12:30:45.876Z",
-    expires_at: "2023-10-25T12:30:45.876Z"
+    created_at: "2025-03-14T22:00:45.876Z",
+    expires_at: "2025-03-15T12:04:00.000Z"
   },
   {
     id: 5,
@@ -46,8 +46,8 @@ export const MOCK_VOTE_LIST = [
     author: "정지은",
     max: 5000,
     min: 10,
-    created_at: "2024-01-05T07:15:23.459Z",
-    expires_at: "2024-01-12T07:15:23.459Z"
+    created_at: "2025-03-14T00:15:23.459Z",
+    expires_at: "2025-03-16T02:04:00.000Z"
   },
   {
     id: 6,
@@ -56,8 +56,8 @@ export const MOCK_VOTE_LIST = [
     author: "최유진",
     max: 2100,
     min: 75,
-    created_at: "2023-12-11T16:20:11.789Z",
-    expires_at: "2023-12-18T16:20:11.789Z"
+    created_at: "2025-03-13T18:20:11.789Z",
+    expires_at: "2025-03-15T08:04:00.000Z"
   },
   {
     id: 7,
@@ -66,8 +66,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     max: 1800,
     min: 300,
-    created_at: "2023-08-22T14:50:35.123Z",
-    expires_at: "2023-08-29T14:50:35.123Z"
+    created_at: "2025-03-14T14:50:35.123Z",
+    expires_at: "2025-03-15T04:04:00.000Z"
   },
   {
     id: 8,
@@ -76,8 +76,8 @@ export const MOCK_VOTE_LIST = [
     author: "한수진",
     max: 1100,
     min: 50,
-    created_at: "2023-09-10T11:00:44.456Z",
-    expires_at: "2023-09-17T11:00:44.456Z"
+    created_at: "2025-03-14T18:00:44.456Z",
+    expires_at: "2025-03-15T11:04:00.000Z"
   },
   {
     id: 9,
@@ -86,8 +86,8 @@ export const MOCK_VOTE_LIST = [
     author: "오세훈",
     max: 3500,
     min: 80,
-    created_at: "2023-07-14T09:25:00.000Z",
-    expires_at: "2023-07-21T09:25:00.000Z"
+    created_at: "2025-03-13T09:25:00.000Z",
+    expires_at: "2025-03-17T02:04:00.000Z"
   },
   {
     id: 10,
@@ -96,7 +96,7 @@ export const MOCK_VOTE_LIST = [
     author: "송지혜",
     max: 0,
     min: 200,
-    created_at: "2023-12-01T18:40:22.987Z",
-    expires_at: "2023-12-08T18:40:22.987Z"
+    created_at: "2025-03-14T10:40:22.987Z",
+    expires_at: "2025-03-15T03:04:00.000Z"
   }
 ];
