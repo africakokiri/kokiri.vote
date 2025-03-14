@@ -1,6 +1,8 @@
+import { cn } from "@/libs/shadcn/utils";
 import { MOCK_VOTE_LIST } from "@/mock/vote_list";
+import { formatExpirationTime } from "@/utils/calcTime";
 
-import { Clock, Users } from "lucide-react";
+import { ChevronRight, Clock, Users } from "lucide-react";
 
 export const Votes = () => {
   return (
@@ -8,21 +10,14 @@ export const Votes = () => {
       <p className="text-3xl font-extrabold">진행중인 투표</p>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
-          ({
-            id,
-            title,
-            description,
-            author,
-            max,
-            min,
-            created_at,
-            expires_at
-          }) => {
+          ({ id, title, description, max, min, expires_at }) => {
+            const formattedRemainTime = formatExpirationTime(expires_at);
+
             return (
               <li
                 key={id}
                 className="space-y-4 rounded-md border-[1px]
-border-black/20 p-4 shadow-md"
+border-black/20 p-6 shadow-md"
               >
                 {/* title, description */}
                 <div className="space-y-2">
@@ -42,10 +37,23 @@ border-black/20 p-4 shadow-md"
                         : `${min} / ${max.toLocaleString()}`}
                     </span>
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div
+                    className={cn(
+                      "flex items-center gap-1",
+                      !formattedRemainTime.includes("일") && "text-red-500"
+                    )}
+                  >
                     <Clock className="h-4 w-4" />
-                    <span>{expires_at}</span>
+                    <span>{formattedRemainTime}</span>
                   </div>
+                </div>
+
+                {/* footer */}
+                <div className="flex justify-end pt-6 text-xs">
+                  <p className="flex items-center text-base">
+                    투표하기
+                    <ChevronRight className="h-4 w-4" />
+                  </p>
                 </div>
               </li>
             );
