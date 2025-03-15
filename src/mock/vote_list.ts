@@ -1,3 +1,5 @@
+import { CATEGORY } from "@/constants/category";
+
 export const MOCK_VOTE_LIST = [
   {
     id: 1,
@@ -6,7 +8,8 @@ export const MOCK_VOTE_LIST = [
     author: "홍길동",
     votes_count: 1500,
     created_at: "2025-03-14T23:34:45.123Z",
-    expires_at: "2025-03-15T08:04:00.000Z"
+    expires_at: "2025-03-15T08:04:00.000Z",
+    category: CATEGORY.기타
   },
   {
     id: 2,
@@ -15,7 +18,8 @@ export const MOCK_VOTE_LIST = [
     author: "김철수",
     votes_count: 0,
     created_at: "2025-03-14T20:12:34.567Z",
-    expires_at: "2025-03-15T10:04:00.000Z"
+    expires_at: "2025-03-15T10:04:00.000Z",
+    category: CATEGORY.사회
   },
   {
     id: 3,
@@ -24,7 +28,8 @@ export const MOCK_VOTE_LIST = [
     author: "이영희",
     votes_count: 3200,
     created_at: "2025-03-13T10:45:00.000Z",
-    expires_at: "2025-03-17T02:04:00.000Z"
+    expires_at: "2025-03-17T02:04:00.000Z",
+    category: CATEGORY.이슈
   },
   {
     id: 4,
@@ -33,7 +38,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     votes_count: 0,
     created_at: "2025-03-14T22:00:45.876Z",
-    expires_at: "2025-03-15T12:04:00.000Z"
+    expires_at: "2025-03-15T12:04:00.000Z",
+    category: CATEGORY.이슈
   },
   {
     id: 5,
@@ -42,7 +48,8 @@ export const MOCK_VOTE_LIST = [
     author: "정지은",
     votes_count: 5000,
     created_at: "2025-03-14T00:15:23.459Z",
-    expires_at: "2025-03-16T02:04:00.000Z"
+    expires_at: "2025-03-16T02:04:00.000Z",
+    category: CATEGORY.정치
   },
   {
     id: 6,
@@ -51,7 +58,8 @@ export const MOCK_VOTE_LIST = [
     author: "최유진",
     votes_count: 2100,
     created_at: "2025-03-13T18:20:11.789Z",
-    expires_at: "2025-03-15T08:04:00.000Z"
+    expires_at: "2025-03-15T08:04:00.000Z",
+    category: CATEGORY.기타
   },
   {
     id: 7,
@@ -60,7 +68,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     votes_count: 1800,
     created_at: "2025-03-14T14:50:35.123Z",
-    expires_at: "2025-03-15T04:04:00.000Z"
+    expires_at: "2025-03-15T04:04:00.000Z",
+    category: CATEGORY.기타
   },
   {
     id: 8,
@@ -69,7 +78,8 @@ export const MOCK_VOTE_LIST = [
     author: "한수진",
     votes_count: 1100,
     created_at: "2025-03-14T18:00:44.456Z",
-    expires_at: "2025-03-15T11:04:00.000Z"
+    expires_at: "2025-03-15T11:04:00.000Z",
+    category: CATEGORY.사회
   },
   {
     id: 9,
@@ -78,7 +88,8 @@ export const MOCK_VOTE_LIST = [
     author: "오세훈",
     votes_count: 3500,
     created_at: "2025-03-13T09:25:00.000Z",
-    expires_at: "2025-03-17T02:04:00.000Z"
+    expires_at: "2025-03-17T02:04:00.000Z",
+    category: CATEGORY.이슈
   },
   {
     id: 10,
@@ -87,6 +98,7 @@ export const MOCK_VOTE_LIST = [
     author: "송지혜",
     votes_count: 0,
     created_at: "2025-03-14T10:40:22.987Z",
-    expires_at: "2025-03-15T03:04:00.000Z"
+    expires_at: "2025-03-15T03:04:00.000Z",
+    category: CATEGORY.사회
   }
 ];
