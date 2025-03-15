@@ -14,7 +14,7 @@ import { cn } from "@/libs/shadcn/utils";
 import { MOCK_VOTE_LIST } from "@/mock/vote_list";
 import { formatExpirationTime } from "@/utils/calcTime";
 
-import { ChevronRight, Clock, Filter, Users } from "lucide-react";
+import { ChevronRight, Clock, Filter, Plus, Users } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
 
@@ -25,48 +25,58 @@ export const Votes = () => {
     <div className="w-full space-y-8 pt-8">
       <div className="flex items-center justify-between">
         <p className="text-3xl font-extrabold">진행중인 투표</p>
-        <DropdownMenu>
-          <DropdownMenuTrigger
-            asChild
-            className="outline-none"
+        <div className="flex items-center gap-4">
+          <button
+            className="h-fit w-fit rounded-md border-[1px] border-black/20
+p-3"
           >
-            <button
-              className="h-fit w-fit rounded-md border-[1px]
+            <Plus className="h-4 w-4" />
+          </button>
+          <DropdownMenu>
+            <DropdownMenuTrigger
+              asChild
+              className="outline-none"
+            >
+              <button
+                className="h-fit w-fit rounded-md border-[1px]
 border-black/20 p-3"
-            >
-              <Filter className="h-4 w-4" />
-            </button>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent className="absolute -right-5 min-w-[100px]">
-            <DropdownMenuLabel className="flex justify-center">
-              카테고리
-            </DropdownMenuLabel>
-            <DropdownMenuSeparator />
-            <DropdownMenuRadioGroup
-              value={selected}
-              onValueChange={setSelected}
-              className="space-y-2"
-            >
-              <DropdownMenuRadioItem
-                value="전체"
-                className="flex justify-center"
               >
-                전체
-              </DropdownMenuRadioItem>
-              {Object.entries(CATEGORY).map(([item]) => {
-                return (
-                  <DropdownMenuRadioItem
-                    key={item}
-                    value={item}
-                    className="flex justify-center"
-                  >
-                    {item}
-                  </DropdownMenuRadioItem>
-                );
-              })}
-            </DropdownMenuRadioGroup>
-          </DropdownMenuContent>
-        </DropdownMenu>
+                <Filter className="h-4 w-4" />
+              </button>
+            </DropdownMenuTrigger>
+            <DropdownMenuContent
+              className="absolute -right-5 min-w-[100px]"
+            >
+              <DropdownMenuLabel className="flex justify-center">
+                카테고리
+              </DropdownMenuLabel>
+              <DropdownMenuSeparator />
+              <DropdownMenuRadioGroup
+                value={selected}
+                onValueChange={setSelected}
+                className="space-y-2"
+              >
+                <DropdownMenuRadioItem
+                  value="전체"
+                  className="flex justify-center"
+                >
+                  전체
+                </DropdownMenuRadioItem>
+                {Object.entries(CATEGORY).map(([item]) => {
+                  return (
+                    <DropdownMenuRadioItem
+                      key={item}
+                      value={item}
+                      className="flex justify-center"
+                    >
+                      {item}
+                    </DropdownMenuRadioItem>
+                  );
+                })}
+              </DropdownMenuRadioGroup>
+            </DropdownMenuContent>
+          </DropdownMenu>
+        </div>
       </div>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
