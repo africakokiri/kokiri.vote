@@ -59,7 +59,7 @@ export const MOCK_VOTE_LIST = [
     votes_count: 2100,
     created_at: "2025-03-13T18:20:11.789Z",
     expires_at: "2025-03-15T08:04:00.000Z",
-    category: CATEGORY.기타
+    category: CATEGORY.문화
   },
   {
     id: 7,
