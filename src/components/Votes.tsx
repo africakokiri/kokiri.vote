@@ -20,7 +20,7 @@ export const Votes = () => {
                 className="space-y-4 rounded-md border-[1px]
 border-black/20 p-6 shadow-md"
               >
-                <Link href={id.toString()}>
+                <Link href={`vote/${id.toString()}`}>
                   {/* title, description */}
                   <div className="space-y-2">
                     <p className="text-2xl font-bold">{title}</p>
