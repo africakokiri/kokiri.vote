@@ -1,3 +1,4 @@
+import { FilterButton } from "@/components/ui/filter-button";
 import { cn } from "@/libs/shadcn/utils";
 import { MOCK_VOTE_LIST } from "@/mock/vote_list";
 import { formatExpirationTime } from "@/utils/calcTime";
@@ -8,7 +9,10 @@ import Link from "next/link";
 export const Votes = () => {
   return (
     <div className="w-full space-y-8 pt-8">
-      <p className="text-3xl font-extrabold">진행중인 투표</p>
+      <div className="flex items-center justify-between">
+        <p className="text-3xl font-extrabold">진행중인 투표</p>
+        <FilterButton />
+      </div>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
           ({ id, title, description, votes_count, expires_at }) => {
