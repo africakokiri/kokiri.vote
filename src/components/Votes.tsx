@@ -29,7 +29,7 @@ border-black/20 p-6 shadow-md"
 
                   {/* others */}
                   <div
-                    className="flex items-center gap-6 text-sm
+                    className="flex items-center gap-6 pt-3 text-sm
 text-black/70"
                   >
                     <div className="flex items-center gap-1">
