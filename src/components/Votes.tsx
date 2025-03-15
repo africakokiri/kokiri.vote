@@ -11,7 +11,14 @@ export const Votes = () => {
       <p className="text-3xl font-extrabold">진행중인 투표</p>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
-          ({ id, title, description, votes_count, expires_at }) => {
+          ({
+            id,
+            title,
+            description,
+            votes_count,
+            expires_at,
+            category
+          }) => {
             const formattedRemainTime = formatExpirationTime(expires_at);
 
             return (
@@ -50,6 +57,7 @@ text-black/70"
 
                   {/* footer */}
                   <div className="flex justify-end pt-6 text-xs">
+                    <span>{category}</span>
                     <p className="flex items-center text-base">
                       투표하기
                       <ChevronRight className="h-4 w-4" />
