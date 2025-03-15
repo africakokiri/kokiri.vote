@@ -79,7 +79,12 @@ border-black/20 p-3"
         </div>
       </div>
       <ul className="w-full space-y-8">
-        {MOCK_VOTE_LIST.map(
+        {MOCK_VOTE_LIST.sort((a, b) => {
+          if (a.expires_at > b.expires_at) return 1;
+          if (a.expires_at < b.expires_at) return -1;
+
+          return 0;
+        }).map(
           ({
             id,
             title,
