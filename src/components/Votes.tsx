@@ -7,18 +7,11 @@ import Link from "next/link";
 
 export const Votes = () => {
   return (
-    <div className="w-full space-y-8 pt-6">
+    <div className="w-full space-y-8 pt-8">
       <p className="text-3xl font-extrabold">진행중인 투표</p>
       <ul className="w-full space-y-8">
         {MOCK_VOTE_LIST.map(
-          ({
-            id,
-            title,
-            description,
-            votes_count,
-            expires_at,
-            category
-          }) => {
+          ({ id, title, description, votes_count, expires_at }) => {
             const formattedRemainTime = formatExpirationTime(expires_at);
 
             return (
@@ -56,9 +49,8 @@ text-black/70"
                   </div>
 
                   {/* footer */}
-                  <div className="flex justify-end pt-6 text-xs">
-                    <span>{category}</span>
-                    <p className="flex items-center text-base">
+                  <div className="flex justify-end pt-3">
+                    <p className="flex items-center">
                       투표하기
                       <ChevronRight className="h-4 w-4" />
                     </p>
