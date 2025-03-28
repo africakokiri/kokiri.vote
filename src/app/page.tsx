@@ -14,10 +14,17 @@ import { calcRemainDate } from "@/utils/calcRemainDate";
 import { ChevronRight, Clock, Users } from "lucide-react";
 import Link from "next/link";
 
+const MOCK_DATA_EXPIRES_AT_ASC = MOCK_VOTE_LIST.sort((a, b) => {
+  if (a.expires_at > b.expires_at) return 1;
+  if (a.expires_at < b.expires_at) return -1;
+
+  return 0;
+});
+
 export default function page() {
   return (
     <div className="space-y-4 px-4">
-      {MOCK_VOTE_LIST.map(
+      {MOCK_DATA_EXPIRES_AT_ASC.map(
         ({ id, title, description, votes_count, expires_at }) => {
           const remainDate = calcRemainDate(expires_at);
 
