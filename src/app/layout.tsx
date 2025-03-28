@@ -22,7 +22,7 @@ export default function RootLayout({
       <body className="h-screen w-screen antialiased">
         <NextThemesProvider>
           <Header />
-          {children}
+          <div className="pb-[16px] pt-[68px]">{children}</div>
         </NextThemesProvider>
       </body>
     </html>
