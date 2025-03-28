@@ -7,7 +7,9 @@ import {
   CardHeader,
   CardTitle
 } from "@/components/ui/card";
+import { cn } from "@/libs/shadcn/utils";
 import { MOCK_VOTE_LIST } from "@/mock/vote_list";
+import { calcRemainDate } from "@/utils/calcRemainDate";
 
 import { ChevronRight, Clock, Users } from "lucide-react";
 import Link from "next/link";
@@ -16,15 +18,9 @@ export default function page() {
   return (
     <div className="space-y-4 px-4">
       {MOCK_VOTE_LIST.map(
-        ({
-          id,
-          title,
-          description,
-          author,
-          votes_count,
-          created_at,
-          expires_at
-        }) => {
+        ({ id, title, description, votes_count, expires_at }) => {
+          const remainDate = calcRemainDate(expires_at);
+
           return (
             <Card
               key={id}
@@ -45,9 +41,14 @@ text-muted-foreground"
                     <Users className="h-4 w-4" />
                     <span>{votes_count}명</span>
                   </div>
-                  <div className="flex items-center gap-1">
+                  <div
+                    className={cn(
+                      "flex items-center gap-1",
+                      remainDate.includes("분 남음") && "text-red-500"
+                    )}
+                  >
                     <Clock className="h-4 w-4" />
-                    <span>1234일 남음</span>
+                    <span>{remainDate}</span>
                   </div>
                 </div>
               </CardContent>
