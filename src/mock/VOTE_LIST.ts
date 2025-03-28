@@ -1,3 +1,5 @@
+import { CATEGORY } from "@/constants/category";
+
 export const MOCK_VOTE_LIST = [
   {
     id: 1,
@@ -6,7 +8,8 @@ export const MOCK_VOTE_LIST = [
     author: "홍길동",
     votes_count: 1500,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-30T12:40:00" // 2일 뒤
+    expires_at: "2025-03-30T12:40:00", // 2일 뒤
+    category: CATEGORY.문화
   },
   {
     id: 2,
@@ -15,7 +18,8 @@ export const MOCK_VOTE_LIST = [
     author: "김철수",
     votes_count: 0,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-29T12:40:00" // 1일 뒤
+    expires_at: "2025-03-29T12:40:00", // 1일 뒤
+    category: CATEGORY.기술
   },
   {
     id: 3,
@@ -24,7 +28,8 @@ export const MOCK_VOTE_LIST = [
     author: "이영희",
     votes_count: 3200,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-31T12:40:00" // 3일 뒤
+    expires_at: "2025-03-31T12:40:00", // 3일 뒤
+    category: CATEGORY.문화
   },
   {
     id: 4,
@@ -33,7 +38,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     votes_count: 0,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-28T13:40:00" // 1시간 뒤
+    expires_at: "2025-03-28T13:40:00", // 1시간 뒤
+    category: CATEGORY.기술
   },
   {
     id: 5,
@@ -42,7 +48,8 @@ export const MOCK_VOTE_LIST = [
     author: "정지은",
     votes_count: 5000,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-30T12:40:00" // 2일 뒤
+    expires_at: "2025-03-30T12:40:00", // 2일 뒤
+    category: CATEGORY.문화
   },
   {
     id: 6,
@@ -51,7 +58,8 @@ export const MOCK_VOTE_LIST = [
     author: "최유진",
     votes_count: 2100,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-28T13:10:00" // 30분 뒤
+    expires_at: "2025-03-28T13:10:00", // 30분 뒤
+    category: CATEGORY.사회
   },
   {
     id: 7,
@@ -60,7 +68,8 @@ export const MOCK_VOTE_LIST = [
     author: "",
     votes_count: 1800,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-29T12:40:00" // 1일 뒤
+    expires_at: "2025-03-29T12:40:00", // 1일 뒤
+    cateogry: CATEGORY.문화
   },
   {
     id: 8,
@@ -69,7 +78,8 @@ export const MOCK_VOTE_LIST = [
     author: "한수진",
     votes_count: 1100,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-28T13:40:00" // 1시간 뒤
+    expires_at: "2025-03-28T13:40:00", // 1시간 뒤
+    category: CATEGORY.문화
   },
   {
     id: 9,
@@ -78,7 +88,8 @@ export const MOCK_VOTE_LIST = [
     author: "오세훈",
     votes_count: 3500,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-31T12:40:00" // 3일 뒤
+    expires_at: "2025-03-31T12:40:00", // 3일 뒤
+    category: CATEGORY.기술
   },
   {
     id: 10,
@@ -87,6 +98,7 @@ export const MOCK_VOTE_LIST = [
     author: "송지혜",
     votes_count: 0,
     created_at: "2025-03-28T12:40:00",
-    expires_at: "2025-03-28T13:30:00" // 50분 뒤
+    expires_at: "2025-03-28T13:30:00", // 50분 뒤
+    category: CATEGORY.이슈
   }
 ];
