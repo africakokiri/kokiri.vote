@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 import { AlignJustify } from "lucide-react";
+import Link from "next/link";
 
 export const Header = () => {
   return (
@@ -19,7 +20,9 @@ border-b-[1px] border-black/20 px-4 py-3 backdrop-blur-md"
           <AlignJustify className="h-6 w-6" />
         </DropdownMenuTrigger>
         <DropdownMenuContent className="absolute -right-3">
-          <DropdownMenuItem>로그인</DropdownMenuItem>
+          <DropdownMenuItem>
+            <Link href="/login">로그인</Link>
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </header>
