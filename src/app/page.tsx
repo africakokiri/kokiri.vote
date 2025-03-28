@@ -40,7 +40,7 @@ export default function MainPage() {
   >("전체");
 
   return (
-    <div className="space-y-4 px-4">
+    <div className="space-y-4 px-4 pb-[16px] pt-[68px]">
       <div className="flex items-center justify-between">
         <p className="text-3xl font-extrabold">진행중인 투표</p>
         <div className="flex items-center gap-4">
